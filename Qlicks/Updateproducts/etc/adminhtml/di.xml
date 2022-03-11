@@ -7,5 +7,4 @@
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <preference for="Magento\Config\Controller\Adminhtml\System\Config\Save" type="Qlicks\Updateproducts\Controller\Adminhtml\System\Config\Save" />
-    <preference for="Magento\Config\Model\Config\Backend\File" type="Qlicks\Updateproducts\\Model\Config\Backend\CustomFileType" />
 </config>
