@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+<system>
+<tab id="Qlicks" translate="label" sortOrder="50">
+<label>Qlicks</label>
+</tab>
+<section id="Qlicks" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+<class>separator-top</class>
+<resource>Qlicks_Updateproducts::qlicks_systemconfig</resource>
+<group id="generalQlick" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+<label>Product Configuration</label>
+</group>
+<group id="uploadconfig" translate="label" type="text" sortOrder="22" showInDefault="1" showInWebsite="0" showInStore="0">
+
+                <label>File Upload</label>
+                 <field id="Qlicks_file_up" translate="label" type="Magento\Config\Block\System\Config\Form\Field\File" sortOrder="6" showInDefault="1" showInWebsite="1" >
+                  <label>Upload custom file</label>
+                </field>
+                <field id="custom_field" type="checkbox" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
+                  <frontend_model>Qlicks\Updateproducts\Block\Adminhtml\System\Config\Advanced</frontend_model>
+                  <attribute type="shared">1</attribute>
+                </field>
+</group>
+</section>
+</system>
+</config>

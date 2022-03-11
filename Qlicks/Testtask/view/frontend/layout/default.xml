@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+<body>
+
+<referenceContainer name="header.panel">
+    <!-- <block class="Magento\Cms\Block\Block" name="custom_proposal_day">
+               <arguments>
+                  <argument name="block_id" xsi:type="string">custom_proposal_day</argument>
+               </arguments>
+          </block> -->
+
+<block class="Magento\Framework\View\Element\Template" name="custom_content_link" template="Qlicks_Testtask::customtopcontent.phtml"/>
+
+</referenceContainer>
+      <!-- <referenceBlock name="footer_links">
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="2custom-link">    
+                <arguments>
+                    <argument name="label" xsi:type="string">Custom Links</argument>
+                    <argument name="path" xsi:type="string">page-url</argument>
+                </arguments>
+            </block>
+        </referenceBlock> -->
+        <referenceContainer name="footer-container">
+          <block class="Magento\Cms\Block\Block" name="custom_proposal_day">
+               <arguments>
+                  <argument name="block_id" xsi:type="string">custom_proposal_day</argument>
+               </arguments>
+          </block>   
+        </referenceContainer>
+    </body>
+</page>

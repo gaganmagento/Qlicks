@@ -1,0 +1,16 @@
+<?php
+
+$product = $block->getProduct();
+
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$scopeConfig    = $objectManager->create('Magento\Framework\App\Config\ScopeConfigInterface');
+$configPath    = 'Qlicks/sampleShipping/active';
+$value         =  $scopeConfig->getValue(
+        $configPath,
+        \Magento\Store\Model\ScopeInterface::SCOPE_STORE
+    );
+if($value == 1){
+?>
+<h1 style="color: #1979c3"><?php echo $product->getData('product_custom_attribute'); ?></h1>
+
+<?php } ?>
