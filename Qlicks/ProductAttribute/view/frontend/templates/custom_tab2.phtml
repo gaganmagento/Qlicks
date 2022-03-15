@@ -14,8 +14,7 @@ $value01              = $scopeConfig->getValue(
         \Magento\Store\Model\ScopeInterface::SCOPE_STORE
     );
 
-if($value =='BelowImage' && $value01) { ?>
+if($value =='BelowProduct' && $value01) { ?>
  <h1 style="color: #1979c3"><?php echo $product->getData('product_custom_attribute'); ?></h1>
 <?php }
 ?>
-
